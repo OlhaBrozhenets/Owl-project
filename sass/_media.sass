@@ -1,0 +1,375 @@
+@media (max-width: nth($mediaBp, 1))
+	.container
+		max-width: nth($mediaBp, 2)	
+		
+	.nav
+		li + li
+			margin-left: 10px
+		a
+			padding: 10px 15px
+	.header
+		&-block
+			&__img
+				margin-left: 40px
+				width: 360px
+				height: 290px
+
+@media (max-width: nth($mediaBp, 2))
+	.container
+		max-width: nth($mediaBp, 3)
+		
+				
+	.ideas
+		&-block
+			padding: 75px 0 90px 
+		&-grid
+			&__item
+				font-size: 17px
+				
+			&__photo
+				height: 130px
+	
+	.recent
+		&-block 
+			padding: 50px 0 80px
+			&__nav
+				margin: 75px 0 75px
+				@include flex($jc: center)
+				li + li
+					margin-left: 20px 
+			&__link
+				font-size: 20px
+				padding: 15px
+			&__button
+				margin: 30px auto 0
+		&-grid
+			&__col
+				max-width: 360px 
+				margin-bottom: 60px
+			&__image
+				height: 220px
+	.template
+		&-info
+			font-size: 19px
+	.team
+		&-block
+			padding-top: 65px
+			.title-sub
+				margin-bottom: 80px
+		&-grid
+			&__photo
+				height: 200px
+			&__info
+				font-size: 19px
+	.post
+		&-block
+			padding: 30px 0 50px
+		&-grid
+			&__info
+				font-size: 15px 
+	
+	.footer			
+		&__rights
+			p
+				font-size: 16px
+				
+				
+		
+@media (max-width: nth($mediaBp, 3))
+	.container
+		max-width: nth($mediaBp, 4)
+		
+	.nav
+		a
+			font-size: 18px
+			padding: 10px 10px
+		
+	.headline
+		&__img
+			width: 25px
+			height: 20px
+		a
+			font-size: 20px
+ 
+	h1
+		font-size: 50px 
+		
+	.title
+		font-size: 38px
+		&-sub
+			font-size: 16px 
+	.header
+		&-block
+			padding: 50px 0 20px
+			&__info
+				padding-bottom: 25px
+			&__img
+				height: 230px
+				
+	.ideas
+		&-grid
+			&__row
+				justify-content: center
+			&__col
+				width: calc(100% / 2)
+	
+	.recent
+		&-grid
+			&__col
+				width: 50% 
+		&-block
+			&__link
+				font-size: 15px 
+				padding: 10px
+
+	.template
+		&-info
+			font-size: 16px
+		&-grid
+			&__image
+				width: 260px
+				height: 210px
+	.team
+		&-block
+			padding:
+				top: 50px
+				bottom: 60px 
+			.title-sub
+				margin-bottom: 60px
+		&-grid
+			&__row
+				justify-content: center
+			&__col
+				width: 50%
+			&__photo
+				height: 180px
+			&__info
+				font-size: 16px
+	.post
+		&-block
+			&__button
+				margin-top: 50px
+		&-grid
+			margin-top: 50px
+			&__row
+				justify-content: center
+			&__col
+				width: 50%
+				
+	.input
+		width: 600px 
+		@include placeholder
+			font-size: 22px 
+	.contact
+		&-block
+			padding: 60px 0 60px
+			&__info
+				margin-top: 30px 
+	.input
+		padding-left: 15px
+		font-size: 15px 
+		width: 500px
+		@include placeholder
+			font-size: 15px 
+		&_small
+			height: 60px
+			margin-bottom: 20px 
+		&_text
+			padding-top: 15px
+			height: 150px
+			margin-bottom: 35px 
+
+	.footer
+		&-block
+			@include flex($fd: column, $ai: center)	
+		&__links
+			margin-bottom: 10px		
+		&__rights
+			p
+				font-size: 14px
+	.icon
+		width: 35px
+		height: 35px
+		
+@media (max-width: nth($mediaBp, 4))
+	.container
+		max-width: nth($mediaBp, 5)
+	
+	.nav
+		display: none
+		
+	.headline
+		margin: 0 auto
+	
+	.button
+		width: 170px 
+		height: 60px 
+		
+	h1
+		font-size: 42px 
+	
+	.header
+		&-block
+			padding: 40px 0 20px
+			&__info
+				padding-bottom: 20px
+			&__img
+				margin-left: 30px
+				width: 360px
+				height: 200px
+	.ideas
+		&-block
+			padding: 50px 0 60px
+	.recent
+		&-block
+			padding: 50px 0 60px
+	.template
+		&-block
+			padding-top: 50px
+		&-grid
+			padding-bottom: 60px
+			&_underlined
+				padding-bottom: 60px
+	.team
+		&-block
+			.title-sub
+				margin-bottom: 10px
+	.contact
+		&-block
+			padding: 50px 0 60px
+			
+	.button
+		font-size: 15px
+		width: 150px
+		height: 50px
+				
+@media (max-width: nth($mediaBp, 5))
+	.container
+		max-width: nth($mediaBp, 6)
+	
+		
+	.header
+		&-block
+			&__img
+				margin:
+					bottom: 15px
+					left: 0
+				width: 250px
+			&__info
+				@include flex($fd: column-reverse, $ai: center)
+		
+	h1
+		font-size: 26px 
+		
+	.title
+		font-size: 24px
+		&-sub
+			font-size: 14px 
+	.header
+		&-block
+			padding: 40px 0 30px
+			&__info
+				padding-bottom: 25px
+			&__img
+				margin-left: 0
+				width: 255px
+				height: 190px
+					
+	.ideas
+		&-block
+			padding: 40px 0 30px 
+		&-grid
+			&__photo
+				height: 100px
+			&__title
+				margin-bottom: 1em
+			&__item
+				font-size: 14px
+			&__col
+				width: 90%
+	
+	.recent
+		&-block
+			padding: 40px 0 30px 
+			&__nav
+				margin: 40px
+				@include flex($w: wrap, $jc: space-around)
+				li + li
+					margin-left: 2px
+				li
+					margin-bottom: 10px
+			&__link
+				padding: 2px
+		&-grid
+			&__row
+				justify-content: center
+			&__image
+				height: 170px
+			&__col
+				width: 90%
+				margin-bottom: 20px
+		&-block
+			&__link
+				font-size: 14px
+
+	.template
+		&-block
+			&__button
+				margin: 0 auto
+		&-info
+			font-size: 14px
+			text-align: center
+		&-grid
+			&__row
+				@include flex($fd: column, $ai: center)
+			&__image
+				margin-right: 0 
+				width: 190px
+				height: 150px
+				&_reverse
+					margin-left: 0
+			
+	.team
+		&-grid
+			margin-top: 30px
+			&__row
+				justify-content: center
+			&__col
+				width: 90%
+			&__photo
+				height: 180px
+			&__info
+				font-size: 16px
+	.post
+		&-block
+			&__button
+				margin-top: 20px
+		&-grid
+			margin-top: 20px
+			&__row
+				justify-content: center
+			&__col
+				width: 90%
+					
+	.input
+		width: 300px
+		&_small
+			height: 50px
+			margin-bottom: 20px
+		&_text
+			height: 110px
+			padding-top: 10px
+			
+		@include placeholder
+			font-size: 16px 
+
+
+	.footer
+		&-block
+			padding: 20px 0 20px
+			text-align: center
+		&__links
+			margin-bottom: 15px		
+		&__rights
+			p
+				font-size: 12px

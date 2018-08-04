@@ -1,0 +1,175 @@
+html, body
+	font-family: "MyriadPro"
+	font-weight: normal
+
+main 
+	overflow: hidden
+	> * 
+		padding-top: 120px
+		padding-bottom: 120px
+
+
+h1 
+	font-family: "Carton" 
+	font-weight: normal
+	text-transform: uppercase
+	font-size: 64px
+	max-width: 545px
+	text-align: center
+	line-height: 0.9
+	
+
+.title
+	font-family: "Carton"
+	font-size: 60px
+	text-transform: uppercase
+	text-align: center
+	margin-bottom: 25px
+	color: $headline
+	&-sub
+		margin: 0 auto 
+		font-family: "MyriadPro"
+		font-size: 19px
+		font-style: normal
+		max-width: 550px
+		text-align: center
+		color: #fff
+		&_gray
+			color: #fefefe 
+	&_gray
+		color: #d3d0d0
+		
+.slider
+	@include flex($jc: center)
+	&__slide
+		width: 30px
+		height: 30px
+		background-color: transparent
+		cursor: pointer
+		border: 2px solid #fff
+		border-radius: 50%
+		margin-right: 20px
+		transition: .2s
+		&:last-child
+			margin-right: 0
+		&:hover 
+			background-color: #fff
+		&:active 
+			background-color: #fff
+		
+%for
+	&-row
+		@include flex($jc: space-between, $w: wrap)
+		margin: -15px
+	&-col
+		padding: 15px
+
+.container
+	width: 100% 
+	max-width: nth($mediaBp, 1)
+	padding-left: 10px
+	padding-right: 10px
+	margin-left: auto
+	margin-right: auto 
+	
+.logo
+	font-family:  "Carton"
+	font-weight: normal
+	font-size: 31.94px
+	color: $header
+	
+		
+.button
+	@include flex($jc: center, $ai: center)
+	width: 190px
+	height: 80px
+	background-color: #fff
+	color: #a2a3a3
+	font-family: "MyriadPro" 
+	font-weight: bold 
+	font-size: 22px
+	text-transform: uppercase
+	border-radius: 7px 
+	transition: .5s
+	position: relative
+	cursor: pointer
+	&_green
+		background-color: #9ad4a6 
+		color: #fff 
+	&_blue
+		background-color: #A5D3DB
+		color: #fff 
+	
+	&:hover 
+		animation: jello 1s both
+		
+@keyframes jello
+	0%, 11.1%, 100%
+		transform: none
+
+	22.2%
+		transform: skewX(-12.5deg) skewY(-12.5deg)
+
+	33.3%
+		transform: skewX(6.25deg) skewY(6.25deg)
+
+	44.4%
+		transform: skewX(-3.125deg) skewY(-3.125deg)
+
+	55.5%
+		transform: skewX(1.5625deg) skewY(1.5625deg)
+
+	66.6%
+		transform: skewX(-0.78125deg) skewY(-0.78125deg)
+
+	77.7%
+		transform: skewX(0.390625deg) skewY(0.390625deg)
+
+	88.8%
+		transform: skewX(-0.1953125deg) skewY(-0.1953125deg)
+
+.overlay 
+	width: 100%
+	height: 100%
+	position: absolute
+	overflow: hidden
+	top: 0
+	left: 0
+	
+.icon
+	width: 44px
+	height: 44px
+	border-radius: 50% 
+	font-size: 22px 
+	color: #fff
+	transition: 0.4s
+	@include flex($jc: center, $ai: center)
+	&_dark
+		width: 58px
+		height: 58px
+		background-color: #525252 
+		color: #3c3c3c  
+	&_dark-blue
+		background-color: #2940a4 
+	&_blue
+		background-color: #24a8fc
+	&_red
+		background-color: #d31131  
+	
+.link
+	margin-right: 15px
+	border-radius: 50%
+	&:last-child
+		margin-right: 0
+	&:hover .icon
+		box-shadow: 0 2px 15px #000
+	&:hover *
+		color: #fff
+	&:hover .fa-twitter
+		background-color: #3ea4f0
+	&:hover .fa-facebook-f
+		background-color: #3b5998
+	&:hover .fa-html5
+		background-color: #f16529
+	&:hover .fa-opencart
+		background-color: #26beef
